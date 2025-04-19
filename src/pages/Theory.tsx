@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 
@@ -19,7 +18,7 @@ const Theory = () => {
     {
       title: "Technology Affordance (Lesson 1)",
       content: "Follows Norman's principles (1988) by using intuitive design (e.g., clear typography, minimalist layout) to signal core functionality. The slogan directly communicates the app's purpose, reducing cognitive load and aligning with perceived affordance.",
-      imageUrl: "https://preview--word-snap-learn.lovable.app/"
+      imageUrl: "/lovable-uploads/59d427c7-d99f-4285-bbaf-8849c29d4ab6.png"
     },
     {
       title: "Generative AI (Lesson 6)",
