@@ -1,10 +1,15 @@
+
 import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 
 const TheorySection = ({ title, content, imageUrl }: { title: string; content: string; imageUrl: string }) => (
   <Card className="flex flex-col md:flex-row gap-6 p-6 mb-8">
-    <div className="w-full md:w-1/3">
-      <img src={imageUrl} alt={title} className="rounded-lg w-full h-auto shadow-md" />
+    <div className="w-full md:w-1/3 flex items-center justify-center">
+      <img 
+        src={imageUrl} 
+        alt={title} 
+        className="rounded-lg max-w-full max-h-64 object-contain shadow-md" 
+      />
     </div>
     <div className="w-full md:w-2/3">
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
