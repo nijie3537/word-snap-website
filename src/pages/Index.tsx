@@ -18,18 +18,6 @@ const Index = () => {
             <p className="text-xl text-gray-600 mb-8">
               Capture. Learn. Remember.
             </p>
-            <div className="flex gap-4 justify-center">
-              <Link to="/theory">
-                <Button className="bg-purple-600 hover:bg-purple-700">
-                  View Theory
-                </Button>
-              </Link>
-              <Link to="/prototype">
-                <Button className="bg-blue-600 hover:bg-blue-700">
-                  Try Prototype
-                </Button>
-              </Link>
-            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
