@@ -30,16 +30,21 @@ const Prototype = () => {
   return (
     <>
       <Navigation />
-      <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white py-12 pt-24">
+      <div className="min-h-screen bg-gradient-to-b from-[#F6FFEE] to-[#F2F5E4] py-12 pt-24">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-8 text-center text-purple-600">Prototype</h1>
+          <h1 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-[#C1FF84] to-[#DBF989] bg-clip-text text-transparent">
+            Prototype
+          </h1>
           <div className="flex justify-center items-center mb-12">
             <a 
               href="https://preview--word-snap-learn.lovable.app/" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <Button variant="default" className="text-lg px-8 py-4">
+              <Button 
+                variant="default" 
+                className="text-lg px-8 py-4 bg-[#C1FF84] hover:bg-[#DBF989] text-gray-800"
+              >
                 View Preview Site
               </Button>
             </a>
@@ -50,15 +55,15 @@ const Prototype = () => {
               <CarouselContent>
                 {features.map((feature, index) => (
                   <CarouselItem key={index}>
-                    <Card className="p-6 hover:shadow-lg transition-shadow">
-                      <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                    <Card className="p-6 hover:shadow-lg transition-shadow bg-white/80 backdrop-blur-sm border border-[#C1FF84]/20">
+                      <h3 className="text-xl font-semibold mb-3 text-[#333]">{feature.title}</h3>
                       <p className="text-gray-600">{feature.description}</p>
                     </Card>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="text-[#333] hover:bg-[#C1FF84]/20" />
+              <CarouselNext className="text-[#333] hover:bg-[#C1FF84]/20" />
             </Carousel>
           </div>
         </div>
