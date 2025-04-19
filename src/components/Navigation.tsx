@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
+import { Home, Square } from "lucide-react";
 
 const Navigation = () => {
   return (
@@ -12,7 +13,16 @@ const Navigation = () => {
           </Link>
           <div className="flex gap-4">
             <Link to="/">
-              <Button variant="ghost">Home</Button>
+              <Button variant="ghost">
+                <Home className="mr-2 h-4 w-4" />
+                Home
+              </Button>
+            </Link>
+            <Link to="/prototype">
+              <Button variant="ghost">
+                <Square className="mr-2 h-4 w-4" />
+                Prototype
+              </Button>
             </Link>
             <Link to="/theory">
               <Button variant="ghost">Theory</Button>
