@@ -3,30 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
-import { 
-  Carousel, 
-  CarouselContent, 
-  CarouselItem, 
-  CarouselPrevious, 
-  CarouselNext 
-} from "@/components/ui/carousel";
 
 const Index = () => {
-  const features = [
-    {
-      title: "Smart Learning",
-      description: "AI-powered personalized vocabulary acquisition based on your needs."
-    },
-    {
-      title: "Visual Recognition", 
-      description: "Instantly identify objects and learn their names in multiple languages."
-    },
-    {
-      title: "Adaptive System",
-      description: "Learning paths that adapt to your progress and preferences."
-    }
-  ];
-
   return (
     <>
       <Navigation />
@@ -41,21 +19,6 @@ const Index = () => {
               Capture. Learn. Remember.
             </p>
           </div>
-
-          <Carousel className="w-full max-w-md mx-auto">
-            <CarouselContent>
-              {features.map((feature, index) => (
-                <CarouselItem key={index}>
-                  <Card className="p-6 hover:shadow-lg transition-shadow">
-                    <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                    <p className="text-gray-600">{feature.description}</p>
-                  </Card>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
         </div>
       </div>
     </>
