@@ -15,7 +15,7 @@ const Index = () => {
               Word Snap
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-              Learn Vocabulary through Your Lens – AI-Powered Language Mastery
+              AI-Powered Language Mastery Through Visual Learning
             </p>
           </div>
           
